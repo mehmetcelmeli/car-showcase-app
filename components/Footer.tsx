@@ -35,6 +35,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
+        <div className=""></div>
       </div>
     </footer>
   );
