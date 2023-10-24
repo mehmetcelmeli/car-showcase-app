@@ -1,6 +1,11 @@
 "use client";
 import { useState } from "react";
 import { SearchManufacturer } from ".";
+const SearchButton = ({otherClasses}) => (
+  <button type="submit" className={`-ml-3  z-10 ${otherClasses}`}>
+
+  </button>
+)
 
 const SearchBar = () => {
     const [manufacturer, setManufacuturer] = useState('');
@@ -15,6 +20,7 @@ const SearchBar = () => {
         setManufacturer={setManufacuturer}
         />
     </div>
+    <SearchButton/>
   </form>
   )
 }
