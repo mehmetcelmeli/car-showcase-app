@@ -35,6 +35,7 @@ async function Home({searchParams}) {
                 <CarCard car={car} />
               ))}
             </div>
+            <ShowMore/>
           </section>
         ) : (
           <div className="home__error-container">
@@ -42,6 +43,7 @@ async function Home({searchParams}) {
             <p>{allCars?.message}</p>
           </div>
         )}
+
       </div>
     </main>
   );
